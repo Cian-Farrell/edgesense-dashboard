@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid,
-  Tooltip, ResponsiveContainer, ReferenceDot
+  Tooltip, ResponsiveContainer
 } from "recharts";
 import axios from "axios";
 
@@ -111,7 +111,6 @@ function App() {
   }, []);
 
   const latest = readings[readings.length - 1];
-  const anomalyPoints = anomalies.map((a) => ({ time: a.time, temp: a.temp, humidity: a.humidity }));
 
   // Styles
   const S = {
