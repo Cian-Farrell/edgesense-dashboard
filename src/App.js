@@ -5,7 +5,7 @@ import {
 } from "recharts";
 import axios from "axios";
 
-const API_URL = "http://108.129.238.144:8084/api/readings";
+const API_URL = "http://edgesense-alb-838502034.eu-west-1.elb.amazonaws.com/api/readings";
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
